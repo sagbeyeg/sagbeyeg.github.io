@@ -1,5 +1,5 @@
 {
-  "name": "sagbeyegb.github.io",
+  "name": "sagbeyeg.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,9 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
+    "install": "^0.13.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
