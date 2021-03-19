@@ -15,29 +15,34 @@ class App extends React.Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-
+    console.log(this.state)
     return (
       <div className="App">
         <Menu pointing secondary>
           <Menu.Menu position='right'>
-          <Menu.Item
-            name='home'
-            active={this.activeItem === 'home'}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name='messages'
-            active={this.activeItem === 'messages'}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name='friends'
-            active={this.activeItem === 'friends'}
-            onClick={this.handleItemClick}
-          />
             <Menu.Item
-              name='logout'
-              active={this.activeItem === 'logout'}
+              name='home'
+              active={this.state.activeItem === 'home'}
+              onClick={this.handleItemClick}
+            />
+            <Menu.Item
+              name='about'
+              active={this.state.activeItem === 'about'}
+              onClick={this.handleItemClick}
+            />
+            <Menu.Item
+              name='work'
+              active={this.state.activeItem === 'work'}
+              onClick={this.handleItemClick}
+            />
+            <Menu.Item
+              name='contact'
+              active={this.state.activeItem === 'contact'}
+              onClick={this.handleItemClick}
+            />
+            <Menu.Item
+              name='resume'
+              active={this.activeItem === 'resume'}
               onClick={this.handleItemClick}
             />
           </Menu.Menu>
