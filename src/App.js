@@ -6,6 +6,7 @@ import AboutMe from './Components/AboutMe';
 import {
   Menu
 } from "semantic-ui-react";
+import Contact from './Components/Contact';
 
 class App extends React.Component {
   state = { 
@@ -49,6 +50,7 @@ class App extends React.Component {
         </Menu>
         <h1>Welcome to Sisan's Portfolio</h1>
         <AboutMe/>
+        <Contact />
       </div>
     );
   }
