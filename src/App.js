@@ -7,6 +7,7 @@ import {
   Menu
 } from "semantic-ui-react";
 import Contact from './Components/Contact';
+import Experience from './Components/Experience';
 
 class App extends React.Component {
   state = { 
@@ -48,8 +49,11 @@ class App extends React.Component {
             />
           </Menu.Menu>
         </Menu>
-        <h1>Welcome to Sisan's Portfolio</h1>
+        <h1>Welcome to Sisan's Portfolio!!!!</h1>
         <AboutMe/>
+        <br />
+        <Experience />
+        <br />
         <Contact />
       </div>
     );
