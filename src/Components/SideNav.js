@@ -1,27 +1,40 @@
 import React, { Component } from 'react';
+import {
+  Menu, Icon
+} from "semantic-ui-react";
 
 class SideNav extends Component {
+  state = { activeItem: 'account' }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
+    const { activeItem } = this.state
+
     return (
       <Menu secondary vertical>
-        <Menu.Item
-          name='account'
-          active={activeItem === 'account'}
-          onClick={this.handleItemClick}
+        <Icon 
+          name='github'
+          size='big'
         />
-        <Menu.Item
-          name='settings'
-          active={activeItem === 'settings'}
-          onClick={this.handleItemClick}
+        <br />
+        <br />
+        <Icon
+          name='linkedin'
+          size='big'
         />
-        <Dropdown item text='Display Options'>
-          <Dropdown.Menu>
-            <Dropdown.Header>Text Size</Dropdown.Header>
-            <Dropdown.Item>Small</Dropdown.Item>
-            <Dropdown.Item>Medium</Dropdown.Item>
-            <Dropdown.Item>Large</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <br />
+        <br />
+        <Icon
+          name='twitter'
+          size='big'
+        />
+        <br />
+        <br />
+        <Icon
+          name='medium'
+          size='big'
+        />
       </Menu>
     );
   }

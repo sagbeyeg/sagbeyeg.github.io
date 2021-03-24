@@ -6,10 +6,10 @@ import AboutMe from './Components/AboutMe';
 import Contact from './Components/Contact';
 import Experience from './Components/Experience';
 import Navbar from './Components/Navbar';
+import SideNav from './Components/SideNav';
 
 class App extends React.Component {
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <Navbar />
@@ -19,6 +19,7 @@ class App extends React.Component {
         <Experience />
         <br />
         <Contact />
+        <SideNav />
       </div>
     );
   }

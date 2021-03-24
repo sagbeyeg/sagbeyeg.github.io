@@ -11,27 +11,28 @@ class Navbar extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
+    const { activeItem } = this.state
     return (
         <Menu pointing secondary>
           <Menu.Menu position='right'>
             <Menu.Item
               name='home'
-              active={this.state.activeItem === 'home'}
+              active={this.activeItem === 'home'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='about'
-              active={this.state.activeItem === 'about'}
+              active={this.activeItem === 'about'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='work'
-              active={this.state.activeItem === 'work'}
+              active={this.activeItem === 'work'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='contact'
-              active={this.state.activeItem === 'contact'}
+              active={this.activeItem === 'contact'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
