@@ -13,25 +13,26 @@ class SideNav extends Component {
 
     return (
       <Menu secondary vertical>
-        <Icon 
+        <Icon link
           name='github'
           size='big'
         />
         <br />
         <br />
-        <Icon
-          name='linkedin'
-          size='big'
-        />
+          <Icon link
+            name='linkedin'
+            size='big' 
+            to="https://www.linkedin.com/in/sisanwunmi-agbeyegbe/"
+          />
         <br />
         <br />
-        <Icon
+        <Icon link
           name='twitter'
           size='big'
         />
         <br />
         <br />
-        <Icon
+        <Icon link
           name='medium'
           size='big'
         />
