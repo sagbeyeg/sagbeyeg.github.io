@@ -1,44 +1,59 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Menu, Icon
 } from "semantic-ui-react";
 
-class SideNav extends Component {
-  state = { activeItem: 'account' }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { activeItem } = this.state
-
+function SideNav() { 
     return (
       <Menu secondary vertical>
-        <Icon link
-          name='github'
-          size='big'
-        />
+        <a 
+        href="https://github.com/sagbeyeg"
+        target="_blank"
+        rel="noreferrer">
+          <Icon link
+            name='github'
+            size='big'
+            color='black'
+          />
+        </a>
         <br />
         <br />
+        <a 
+        href="https://www.linkedin.com/in/sisanwunmi-agbeyegbe/"
+        target="_blank"
+        rel="noreferrer">
           <Icon link
             name='linkedin'
-            size='big' 
-            to="https://www.linkedin.com/in/sisanwunmi-agbeyegbe/"
+            size='big'
+            color='black'
           />
+        </a>
         <br />
         <br />
-        <Icon link
-          name='twitter'
-          size='big'
-        />
+        <a 
+        href="https://twitter.com/sagbeyeg"
+        target="_blank"
+        rel="noreferrer">
+          <Icon link
+            name='twitter'
+            size='big'
+            color='black'
+          />
+        </a>
         <br />
         <br />
-        <Icon link
-          name='medium'
-          size='big'
-        />
+        <a 
+        href="https://agbeyegbesisan.medium.com/"
+        target="_blank"
+        rel="noreferrer">
+          <Icon link
+            name='medium'
+            size='big'
+            color='black'
+          />
+        </a>
       </Menu>
     );
-  }
 }
 
 export default SideNav;

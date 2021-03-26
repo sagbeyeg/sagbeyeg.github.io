@@ -17,27 +17,29 @@ class Navbar extends Component {
           <Menu.Menu position='right'>
             <Menu.Item
               name='home'
-              active={this.activeItem === 'home'}
+              active={activeItem === 'home'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='about'
-              active={this.activeItem === 'about'}
+              active={activeItem === 'about'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='work'
-              active={this.activeItem === 'work'}
+              active={activeItem === 'work'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='contact'
-              active={this.activeItem === 'contact'}
+              active={activeItem === 'contact'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
               name='resume'
               href='SisanwunmiAgbeyegbeResume.pdf'
+              target="_blank"
+              rel="noreferrer"
             />
           </Menu.Menu>
         </Menu>
