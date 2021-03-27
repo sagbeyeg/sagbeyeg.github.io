@@ -13,7 +13,7 @@ function SideNav() {
           <Icon link
             name='github'
             size='big'
-            color='black'
+            inverted color='grey'
           />
         </a>
         <br />
@@ -25,7 +25,7 @@ function SideNav() {
           <Icon link
             name='linkedin'
             size='big'
-            color='black'
+            inverted color='grey'
           />
         </a>
         <br />
@@ -37,7 +37,7 @@ function SideNav() {
           <Icon link
             name='twitter'
             size='big'
-            color='black'
+            inverted color='grey'
           />
         </a>
         <br />
@@ -49,7 +49,7 @@ function SideNav() {
           <Icon link
             name='medium'
             size='big'
-            color='black'
+            inverted color='grey'
           />
         </a>
       </Menu>

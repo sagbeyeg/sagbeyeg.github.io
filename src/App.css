@@ -2,3 +2,8 @@
   text-align: center;
   /* background-color: #800020; */
 }
+
+.about-me {
+  max-width: 50rem;
+  /* margin-left: 3000; */
+}

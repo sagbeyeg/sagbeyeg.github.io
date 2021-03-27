@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Menu
+  Menu, Button
 } from "semantic-ui-react";
 
 class Navbar extends Component {
@@ -13,7 +13,10 @@ class Navbar extends Component {
   render() {
     const { activeItem } = this.state
     return (
-        <Menu pointing secondary>
+        <Menu pointing secondary inverted>
+          <Menu.Menu position='left'>
+
+          </Menu.Menu>
           <Menu.Menu position='right'>
             <Menu.Item
               name='home'
@@ -35,12 +38,13 @@ class Navbar extends Component {
               active={activeItem === 'contact'}
               onClick={this.handleItemClick}
             />
-            <Menu.Item
+            <Button
               name='resume'
               href='SisanwunmiAgbeyegbeResume.pdf'
               target="_blank"
-              rel="noreferrer"
-            />
+              rel="noreferrer">
+                Resume
+            </Button>
           </Menu.Menu>
         </Menu>
     );
