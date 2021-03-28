@@ -5,5 +5,9 @@
 
 .about-me {
   max-width: 50rem;
-  /* margin-left: 3000; */
+}
+
+.home {
+  margin: 7cm;
+  padding: 3cm;
 }

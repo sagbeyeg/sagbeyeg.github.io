@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Menu, Icon
+  Menu, Icon, Sticky
 } from "semantic-ui-react";
 
 function SideNav() { 

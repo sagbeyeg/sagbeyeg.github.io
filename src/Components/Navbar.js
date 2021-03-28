@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Menu, Button
+  Menu, Button, Sticky
 } from "semantic-ui-react";
 
 class Navbar extends Component {
@@ -13,6 +13,7 @@ class Navbar extends Component {
   render() {
     const { activeItem } = this.state
     return (
+      <Sticky>
         <Menu pointing secondary inverted>
           <Menu.Menu position='left'>
 
@@ -47,6 +48,7 @@ class Navbar extends Component {
             </Button>
           </Menu.Menu>
         </Menu>
+      </Sticky>
     );
   }
 }

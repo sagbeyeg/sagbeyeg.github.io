@@ -13,7 +13,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar />
-        <h1>Welcome to Sisan's Portfolio!!!!</h1>
+        <div className="card home">
+          <h5>Hi there! My name is</h5>
+          <h1>Sisanwunmi Agbeyegbe</h1>
+          <h1>Software Engineer</h1>
+          <h5>I'm a Software Engineer based in New York Metropolitan Area who specializes in building full stack web applications. </h5>
+        </div>
         <AboutMe/>
         <br />
         <Experience />

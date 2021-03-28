@@ -2,9 +2,9 @@ import React from 'react';
 
 function AboutMe() {
   return (
-    <div className="card about-me">
-      <h2 class="card-title">About Me</h2>
-      <div class="row">
+    <>
+      <h2>About Me</h2>
+      <div class="row about-me">
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
@@ -19,7 +19,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
