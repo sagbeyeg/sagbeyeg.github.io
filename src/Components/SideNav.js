@@ -5,6 +5,7 @@ import {
 
 function SideNav() { 
     return (
+      <Sticky>
       <Menu secondary vertical>
         <a 
         href="https://github.com/sagbeyeg"
@@ -53,6 +54,7 @@ function SideNav() {
           />
         </a>
       </Menu>
+      </Sticky>
     );
 }
 

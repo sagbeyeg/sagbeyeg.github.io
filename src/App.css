@@ -1,13 +1,26 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   /* background-color: #800020; */
 }
 
 .about-me {
-  max-width: 50rem;
+  margin-left: 150px;
+  margin-right: 150px;
+  /* margin-bottom: 500px; */
+  margin-top: 50px;
+  padding: 3cm;
+}
+
+.about-me-text {
+  margin-left: 100px;
+}
+
+.center {
+  text-align: center;
 }
 
 .home {
   margin: 7cm;
   padding: 3cm;
+  font-size: 300%;
 }

@@ -20,9 +20,7 @@ class App extends React.Component {
           <h5>I'm a Software Engineer based in New York Metropolitan Area who specializes in building full stack web applications. </h5>
         </div>
         <AboutMe/>
-        <br />
         <Experience />
-        <br />
         <Contact />
         <SideNav />
       </div>
