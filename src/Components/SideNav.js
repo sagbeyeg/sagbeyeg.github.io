@@ -5,7 +5,7 @@ import {
 
 function SideNav() { 
     return (
-      <Sticky>
+      <Sticky className="socials">
       <Menu secondary vertical>
         <a 
         href="https://github.com/sagbeyeg"

@@ -4,16 +4,16 @@
 }
 
 .about-me {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 6cm;
+  margin-right: 6cm;
   /* margin-bottom: 500px; */
   margin-top: 50px;
-  padding: 3cm;
+  padding: 2cm;
 }
 
-.about-me-text {
+/* .about-me-text {
   margin-left: 100px;
-}
+} */
 
 .center {
   text-align: center;
@@ -22,5 +22,10 @@
 .home {
   margin: 7cm;
   padding: 3cm;
-  font-size: 300%;
+}
+
+.socials {
+  margin: 30px;
+  bottom: 0;
+  position:fixed
 }
