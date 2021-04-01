@@ -3,7 +3,7 @@ import React from 'react';
 function AboutMe() {
   return (
     <>
-      <h1 className="center">About Me</h1>
+      <h1 className="left-align">About Me</h1><hr className="hr"></hr>
       <div className="card mb-3 about-me">
         <div className="row g-0">
           <div className="col-md-8">

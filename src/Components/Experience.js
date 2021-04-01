@@ -2,9 +2,9 @@ import React from 'react';
 
 function Experience() {
   return (
-    <div className="center">
-      <h2>Projects</h2>
-      <div><strong>Insert Projects Here</strong></div>
+    <div>
+      <h1 className="left-align">Projects</h1><hr className="hr"></hr>
+      <div className="center"><strong>Insert Projects Here</strong></div>
     </div>
   );
 }
