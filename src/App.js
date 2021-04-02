@@ -5,6 +5,7 @@ import Contact from './Components/Contact';
 import Experience from './Components/Experience';
 import Navbar from './Components/Navbar';
 import SideNav from './Components/SideNav';
+import {Image} from "semantic-ui-react"
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
       <div className="App">
         <Navbar />
         <SideNav />
+        <Image src='logo.png' size="medium"/>
         <div className="card home">
           <h5 className="small-header">Hi there! My name is</h5>
           <h1 className="large-header">Sisanwunmi Agbeyegbe</h1>

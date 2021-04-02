@@ -16,7 +16,6 @@ class Navbar extends Component {
       <Sticky>
         <Menu pointing secondary inverted>
           <Menu.Menu position='left'>
-
           </Menu.Menu>
           <Menu.Menu position='right'>
             <Menu.Item
