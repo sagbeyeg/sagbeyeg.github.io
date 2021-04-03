@@ -13,7 +13,7 @@ class App extends React.Component {
       <div className="App">
         <Navbar />
         <SideNav />
-        <Image src='logo.png' size="medium"/>
+        <Image src='logo.png' size="medium" centered/>
         <div className="card home">
           <h5 className="small-header">Hi there! My name is</h5>
           <h1 className="large-header">Sisanwunmi Agbeyegbe</h1>
