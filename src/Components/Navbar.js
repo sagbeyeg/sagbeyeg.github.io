@@ -16,6 +16,9 @@ class Navbar extends Component {
       <Sticky>
         <Menu pointing secondary inverted>
           <Menu.Menu position='left'>
+            <Menu.Item>
+              {/* <Image src='logo2.png' size="mini"/> */}
+            </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>
             <Menu.Item
@@ -38,13 +41,15 @@ class Navbar extends Component {
               active={activeItem === 'contact'}
               onClick={this.handleItemClick}
             />
-            <Button
-              name='resume'
-              href='SisanwunmiAgbeyegbeResume.pdf'
-              target="_blank"
-              rel="noreferrer">
-                Resume
-            </Button>
+            <Menu.Item>
+              <Button
+                name='resume'
+                href='SisanwunmiAgbeyegbeResume.pdf'
+                target="_blank"
+                rel="noreferrer">
+                  Resume
+              </Button>
+            </Menu.Item>
           </Menu.Menu>
         </Menu>
       </Sticky>

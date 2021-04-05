@@ -24,7 +24,7 @@ class App extends React.Component {
         <AboutMe/>
         <Experience />
         <Contact />
-        <Image src='logo2.png' size="small" centered/>
+        <Image src='logo2.png' size="tiny" centered/>
       </div>
     );
   }
