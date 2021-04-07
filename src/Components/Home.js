@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
 import {Image} from "semantic-ui-react"
-
+import ReactCardFlip from 'react-card-flip';
 class Home extends Component {
   render() {
+    React.state = {
+      isFlipped: false
+    }
+
+    const handleClick = (e) => {
+      e.preventDefault();
+      React.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+    }
+    
     return (
       <div>
+        <ReactCardFlip isFlipped={React.state.isFlipped} flipDirection="vertical">
+        <YOUR_FRONT_COMPONENT>
+        <Image src='logo2.png' size="medium" centered/>
+          <button onClick={this.handleClick}>Click to flip</button>
+        </YOUR_FRONT_COMPONENT>
+
+        <YOUR_BACK_COMPONENT>
+          This is the back of the card.
+          <button onClick={this.handleClick}>Click to flip</button>
+        </YOUR_BACK_COMPONENT>
+        </ReactCardFlip>
         {/* <Image src='logo.png' size="medium" centered/> */}
         <Image src='logo2.png' size="medium" centered/>
         <div className="card home">

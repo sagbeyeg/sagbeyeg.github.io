@@ -11,6 +11,7 @@ class Navbar extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
+    // <button onClick={() => window.scrollTo(0, 1500)}>Open Me</button>
     const { activeItem } = this.state
     return (
       <Sticky>
