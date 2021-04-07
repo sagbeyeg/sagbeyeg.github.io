@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Menu, Button, Sticky
+  Menu, Button, Sticky, Image
 } from "semantic-ui-react";
 
 class Navbar extends Component {
@@ -15,10 +15,10 @@ class Navbar extends Component {
     const { activeItem } = this.state
     return (
       <Sticky>
-        <Menu pointing secondary inverted>
+        <Menu pointing secondary inverted size="medium">
           <Menu.Menu position='left'>
             <Menu.Item>
-              {/* <Image src='logo2.png' size="mini"/> */}
+              <Image src='inverse-logo.png' size="mini"/>
             </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>

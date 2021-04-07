@@ -20,9 +20,14 @@
 .home {
   margin-left: 7cm;
   margin-right: 7cm;
-  /* margin-top: 3cm; */
+  margin-top: 4cm;
   margin-bottom: 8cm;
   padding: 3cm;
+}
+
+.home-logo {
+  margin-top: 4.5cm;
+  margin-bottom: 8cm;
 }
 
 .hr {
