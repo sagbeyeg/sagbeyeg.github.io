@@ -6,16 +6,19 @@ class Home extends Component {
     isFlipped: false
   }
 
-  handleClick = (e) => {
-    // e.preventDefault();
-    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+  componentDidMount(){
+    setTimeout(
+      () => this.setState({ isFlipped: true }), 
+      1500
+    );
   }
+
   render() {
     
     return (
       <div>
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-          <div onMouseEnter={this.handleClick}>
+          <div>
           <Image className="home-logo" src='logo2.png' size="large" centered/>
           </div>
 
