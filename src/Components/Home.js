@@ -23,6 +23,7 @@ class Home extends Component {
           </div>
 
           <div>
+            <Image  className="home-card-logo" src='logo2.png' size="small" centered/>
             <div className="card home">
               <h5 className="small-header">Hi there! My name is</h5>
               <h1 className="large-header">Sisanwunmi Agbeyegbe</h1>
