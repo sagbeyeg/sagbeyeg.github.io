@@ -4,18 +4,19 @@ import {
 } from "semantic-ui-react";
 
 class Navbar extends Component {
-  state = { 
-    activeItem: 'home' 
-  }
+  // state = { 
+  //   activeItem: 'home' 
+  // }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  // handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-    // <button onClick={() => window.scrollTo(0, 1500)}>Open Me</button>
-    const { activeItem } = this.state
+    const { activeItem } = this.props
+    const {handleItemClick} = this.props
+    console.log(activeItem)
     return (
       <Sticky>
-        <Menu pointing secondary inverted size="medium">
+        <Menu pointing secondary inverted size="large">
           <Menu.Menu position='left'>
             <Menu.Item>
               <Image src='inverse-logo.png' size="mini"/>
@@ -25,22 +26,22 @@ class Navbar extends Component {
             <Menu.Item
               name='home'
               active={activeItem === 'home'}
-              onClick={this.handleItemClick}
+              onClick={handleItemClick}
             />
             <Menu.Item
               name='about'
               active={activeItem === 'about'}
-              onClick={this.handleItemClick}
+              onClick={handleItemClick}
             />
             <Menu.Item
               name='work'
               active={activeItem === 'work'}
-              onClick={this.handleItemClick}
+              onClick={handleItemClick}
             />
             <Menu.Item
               name='contact'
               active={activeItem === 'contact'}
-              onClick={this.handleItemClick}
+              onClick={handleItemClick}
             />
             <Menu.Item>
               <Button

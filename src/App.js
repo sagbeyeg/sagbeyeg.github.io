@@ -6,15 +6,23 @@ import Experience from './Components/Experience';
 import Navbar from './Components/Navbar';
 import SideNav from './Components/SideNav';
 import Home from './Components/Home';
+import Projects from './Containers/Projects';
 
 class App extends React.Component {
+  state = {
+    activeItem: 'home' 
+  }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Navbar handleItemClick={this.handleItemClick} activeItem={this.state.activeItem}/>
         <SideNav />
         <Home />
-        <AboutMe/>
+        <AboutMe />
+        <Projects />
         <Experience />
         <Contact />
       </div>
