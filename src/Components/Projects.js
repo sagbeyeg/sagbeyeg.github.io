@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Projects() {
+class Projects extends Component{
+  render() {
   return (
     <div>
       <h1 className="left-align">My Projects</h1>
@@ -9,7 +10,7 @@ function Projects() {
         <strong>Insert Projects Here</strong>
       </div>
     </div>
-  );
+  );}
 }
 
 export default Projects;
