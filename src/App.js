@@ -6,7 +6,7 @@ import Experience from './Components/Experience';
 import Navbar from './Components/Navbar';
 import SideNav from './Components/SideNav';
 import Home from './Components/Home';
-import Projects from './Containers/Projects';
+import Projects from './Components/Projects';
 
 class App extends React.Component {
   state = {
