@@ -26,7 +26,7 @@ class App extends React.Component {
         <Home />
         <AboutMe />
         <Projects />
-        <Education />
+        {/* <Education /> */}
         <Contact />
       </div>
     );
